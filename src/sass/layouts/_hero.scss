@@ -1,0 +1,267 @@
+.hero {
+  position: relative;
+
+  padding-top: 181px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+  background-color: #474747;
+
+  &__social {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &--main {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-main-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-main-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-main-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--restaurant {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-rest-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-rest-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-rest-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--hotel {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-hotel-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-hotel-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-hotel-desk-2x.jpg);
+      }
+    }
+  }
+
+  &__subtitel {
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 56px;
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__subtitel--hotel {
+    margin-bottom: 190px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 234px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 242px;
+    }
+  }
+
+  &__slogan {
+    margin-bottom: 113px;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 137px;
+      font-size: 36px;
+    }
+  }
+
+  .hero__wrap {
+    display: flex;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    // display: block; вопрос!!!!!!!
+    margin: 0 auto 24px;
+
+    & + .hero__button {
+      margin-bottom: 130px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 0;
+
+      & + .hero__button {
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 1280px) {
+        & + .hero__button {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+}

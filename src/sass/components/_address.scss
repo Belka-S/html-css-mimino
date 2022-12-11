@@ -1,0 +1,49 @@
+.address {
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: 105px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 351px) {
+    top: 64px;
+  }
+  display: inline-block;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  &__link {
+    padding: 8px;
+    display: flex;
+
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    color: #e5e5e5;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
+
+    &:hover > .address__icon,
+    &:focus > .address__icon {
+      fill: #c79002;
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+    align-self: center;
+    fill: #f3c653;
+    transition: fill 250ms linear;
+  }
+}

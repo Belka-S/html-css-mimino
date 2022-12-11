@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIMIHO</title>
+  <title>MIMINO</title>
 
   <link rel="stylesheet" href="./sass/index.scss" />
   <script type="module" src="./index.js"></script>
@@ -12,17 +12,24 @@
 
 <body>
   <!-- Header -->
-  <section class="heder">
-    <include src="./partials/header.html"></include>
-    <include src="./partials/social.html"></include>
+  <section class="header container">
+    <div class="header__wrap">
+      <include src="./partials/header.html"></include>
+      <div class="header__social">
+        <include src="./partials/social.html"></include>
+      </div>
+    </div>
   </section>
   <!-- main -->
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero hero--main container">
       <include src="./partials/pages/main/hero.html"></include>
-      <include src="./partials/social.html"></include>
+      <div class="hero__social">
+        <include src="./partials/social.html"></include>
+      </div>
     </section>
+
 
 
     <!-- About our restaurant -->
@@ -39,8 +46,8 @@
   </main>
   <!--  Footer -->
   <section class="footer">
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/social.html"></include>
+    <!-- <include src="./partials/footer.html"></include> -->
+    <!-- <include src="./partials/social.html"></include> -->
   </section>
 </body>
 

@@ -1,1 +1,32 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  // padding: 96px 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  // max-width: 384px;
+  max-width: 414px;
+  padding: 0 15px;
+
+  @media screen and (min-width: 1024px) {
+    // max-width: 930px;
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // max-width: 1110px;
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}

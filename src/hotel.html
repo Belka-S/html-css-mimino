@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,16 +12,22 @@
 
 <body>
   <!-- Header -->
-  <section class="heder">
-    <include src="./partials/header.html"></include>
-    <include src="./partials/social.html"></include>
+  <section class="header container">
+    <div class="header__wrap">
+      <include src="./partials/header.html"></include>
+      <div class="header__social">
+        <include src="./partials/social.html"></include>
+      </div>
+    </div>
   </section>
   <!-- main -->
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero hero--hotel container">
       <include src="./partials/pages/hotel/hero.html"></include>
-      <include src="./partials/social.html"></include>
+      <div class="hero__social">
+        <include src="./partials/social.html"></include>
+      </div>
     </section>
 
     <!-- 1 room luxe for 2 adult -->
@@ -32,10 +38,10 @@
 
   </main>
   <!--  Footer -->
-  <section class="footer">
+  <!-- <section class="footer">
     <include src="./partials/footer.html"></include>
     <include src="./partials/social.html"></include>
-  </section>
+  </section> -->
 </body>
 
 </html>

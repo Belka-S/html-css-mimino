@@ -1,11 +1,16 @@
-<div class="container">
-  <h1 class="logo hero__logo"><span>MIMIHO</span></h1>
-  <h2 class="hero__subtitel">Готель</h2>
+<h1 class="logo hero__logo"><span>MIMINO</span></h1>
+<h2 class="hero__subtitel hero__subtitel--hotel">Hotel</h2>
+<div class="hero__wrap">
   <address class="address">
     <a class="address__link" href="https://goo.gl/maps/Pnjo7kjwatkfAMe19" target="_blank"
       rel="noopener noreferrer nofollow">
-      Україна, м. Полтава, вул. Маршала Бірюзова, 15</a>
+      <svg class="address__icon" width="24" height="24">
+        <use href="./images/sprite.svg#map"></use>
+      </svg>
+      <span class="address__value">Ukraine, Poltava,
+        <br>St. Marshal Biryuzov, 15
+      </span></a>
   </address>
-  <button type="button">Забронювати номер</button>
-  <button type="button">Переглянути ціни</button>
+  <button class="button button--gray hero__button" type="button" data-room>Room booking</button>
+  <button class="button button--gray hero__button" type="button" data-price>Room prices</button>
 </div>

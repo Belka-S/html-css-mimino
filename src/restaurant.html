@@ -14,9 +14,9 @@
   <!-- Header -->
   <section class="header container">
     <div class="header__wrap">
-      <include src="./partials/header.html"></include>
+      <include src="./partials/layouts/header.html"></include>
       <div class="header__social">
-        <include src="./partials/social.html"></include>
+        <include src="./partials/layouts/social.html"></include>
       </div>
     </div>
   </section>
@@ -26,7 +26,7 @@
     <section class="hero hero--restaurant container">
       <include src="./partials/pages/restaurant/hero.html"></include>
       <div class="hero__social">
-        <include src="./partials/social.html"></include>
+        <include src="./partials/layouts/social.html"></include>
       </div>
     </section>
 
@@ -36,10 +36,12 @@
 
   </main>
   <!--  Footer -->
-  <!-- <section class="footer">
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/social.html"></include>
-  </section> -->
+  <section class="footer container">
+    <include src="./partials/layouts/footer.html"></include>
+    <div class="footer__social">
+      <include src="./partials/layouts/social.html"></include>
+    </div>
+  </section>
 </body>
 
 </html>

@@ -21,6 +21,7 @@
   }
 
   &--main {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -76,6 +77,7 @@
   }
 
   &--restaurant {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -131,6 +133,7 @@
   }
 
   &--hotel {
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -235,6 +238,7 @@
 
   .hero__wrap {
     display: flex;
+    align-items: center;
 
     @media screen and (max-width: 1023px) {
       flex-direction: column;
@@ -242,11 +246,10 @@
   }
 
   &__button {
-    // display: block; вопрос!!!!!!!
     margin: 0 auto 24px;
 
     & + .hero__button {
-      margin-bottom: 130px;
+      margin-bottom: 58px;
     }
 
     @media screen and (min-width: 1024px) {

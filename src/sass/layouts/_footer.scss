@@ -1,5 +1,45 @@
 .footer {
+  display: flex;
+  padding: 40px;
+
+  @media screen and (max-width: 370px) {
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 80px 120px 80px 155px;
+  }
+
+  align-items: center;
+
   background-color: #0e0c07;
+
+  &__wrap {
+    margin-left: auto;
+    display: block;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    margin-bottom: 32px;
+    list-style: none;
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 135px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 200px;
+    }
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
 
   &__link {
     text-decoration: none;
@@ -9,5 +49,17 @@
     letter-spacing: 0.02em;
 
     color: #f3c653;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
+  }
+
+  &__social {
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
   }
 }

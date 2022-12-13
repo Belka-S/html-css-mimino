@@ -1,3 +1,5 @@
+// <!-- <button class="btn room__btn" type="button">Make reservation</button> -->
+// <!-- <button class="btn modal__btn" type="button">Make reservation</button> -->
 .button {
   height: 48px;
   // padding: 14px;
@@ -38,7 +40,7 @@
   }
 }
 
-.room__btn {
+%btn {
   height: 64px;
   // padding: 20px;
   min-width: 384px;
@@ -53,7 +55,6 @@
   color: #ffffff;
   background-color: #000000;
   border: 1px solid #f3c653;
-  border-radius: 25px;
   transition: background-color 250ms linear, border-color 250ms linear,
     color 250ms linear;
 
@@ -61,8 +62,21 @@
   &:focus {
     color: #000000;
     background-color: #f3c653;
-    border-color: F3C653;
+    border-color: #f3c653;
   }
+
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: #f3c653;
+    border-color: #f3c653;
+  }
+}
+
+.room__btn {
+  @extend %btn;
+
+  border-radius: 25px;
 
   @media screen and (min-width: 1024px) {
     // padding: 18px;
@@ -72,37 +86,9 @@
 }
 
 .modal__btn {
-  height: 64px;
-  // padding: 20px;
-  min-width: 384px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  @extend %btn;
 
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #000000;
-  border: 1px solid #f3c653;
   border-radius: 2px;
-  transition: background-color 250ms linear, border-color 250ms linear,
-    color 250ms linear;
-
-  &:hover,
-  &:focus {
-    color: #000000;
-    background-color: #f3c653;
-    border-color: F3C653;
-  }
-
-  &:hover,
-  &:focus {
-    color: #000000;
-    background-color: #f3c653;
-    border-color: F3C653;
-  }
 
   @media screen and (min-width: 1024px) {
     // padding: 18px;

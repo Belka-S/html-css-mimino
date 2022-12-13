@@ -1,6 +1,5 @@
 .logo {
   font-family: 'Film P3', sans-serif;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: 0.3em;
@@ -54,6 +53,10 @@
   text-decoration: none;
   font-size: 40px;
   color: #f3c653;
+
+  @media screen and (max-width: 370px) {
+    margin-right: 20px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 64px;

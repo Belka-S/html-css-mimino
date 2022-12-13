@@ -112,6 +112,9 @@
 
   &__tel {
     padding: 7px;
+    &.mob-hidden {
+      padding-left: 0;
+    }
 
     display: flex;
     align-items: center;
@@ -125,7 +128,7 @@
 
     &:hover,
     &:focus {
-      color: #c79002;
+      color: #f3c653;
     }
 
     &:hover > .nav__icon,
@@ -138,10 +141,10 @@
     fill: #f3c653;
     transition: fill 250ms linear;
   }
+}
 
-  &__hidden {
-    @media screen and (max-width: 1023px) {
-      display: none;
-    }
+.mob-hidden {
+  @media screen and (max-width: 1023px) {
+    display: none;
   }
 }

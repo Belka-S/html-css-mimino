@@ -16,6 +16,12 @@
   text-decoration: none;
   font-size: 36px;
   color: #ffffff;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 40px;
@@ -53,6 +59,12 @@
   text-decoration: none;
   font-size: 40px;
   color: #f3c653;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #c79002;
+  }
 
   @media screen and (max-width: 370px) {
     margin-right: 20px;

@@ -11,7 +11,6 @@
 
     &--framed {
       @media screen and (min-width: 1024px) {
-        padding: 8px 12px;
         border: 0.5px solid #f3c653;
         border-radius: 2px;
 
@@ -35,6 +34,18 @@
     font-size: 16px;
     line-height: 1.25;
     color: #f3c653;
+    transition: color 250ms linear;
+
+    &--framed {
+      @media screen and (min-width: 1024px) {
+        padding: 8px 12px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: #c79002;
+    }
 
     &:hover > .social__icon,
     &:focus > .social__icon {
@@ -43,7 +54,8 @@
   }
 
   &__icon {
-    fill: #f3c653;
+    // fill: #f3c653;
+    fill: currentColor;
     transition: fill 250ms linear;
   }
 

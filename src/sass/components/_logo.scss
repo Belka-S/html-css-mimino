@@ -15,8 +15,16 @@
 %text-shadow {
   background-color: #ffffff;
   color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), 0 0 0 #ffffff,
+    4px 4px 4px rgba(0, 0, 0, 0.45);
   background-clip: text;
+
+  /* Don't show shadows when selecting text */
+  ::selection {
+    background: #5af;
+    color: #fff;
+    text-shadow: none;
+  }
 }
 
 .header__logo {

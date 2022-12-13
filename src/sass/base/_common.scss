@@ -10,9 +10,11 @@ body {
   margin-right: auto;
   width: 100%;
 
-  // max-width: 384px;
-  max-width: 414px;
-  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    // max-width: 384px;
+    max-width: 414px;
+    padding: 0 15px;
+  }
 
   @media screen and (min-width: 1024px) {
     // max-width: 930px;

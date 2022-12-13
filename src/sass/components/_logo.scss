@@ -12,11 +12,19 @@
   }
 }
 
+%text-shadow {
+  background-color: #ffffff;
+  color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-clip: text;
+}
+
 .header__logo {
   text-decoration: none;
   font-size: 36px;
-  color: #ffffff;
   transition: color 250ms linear;
+
+  @extend %text-shadow;
 
   &:hover,
   &:focus {
@@ -31,16 +39,17 @@
 .hero__logo {
   margin-bottom: 24px;
 
+  text-align: center;
+  font-size: 96px;
+
+  @extend %text-shadow;
+
   @media screen and (min-width: 1024px) {
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
-
-  text-align: center;
-  font-size: 96px;
-  color: #ffffff;
 
   @media screen and (min-width: 1024px) {
     font-size: 128px;

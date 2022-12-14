@@ -1,18 +1,20 @@
 .footer {
-  display: flex;
-  padding: 40px;
+  &__container {
+    display: flex;
+    padding: 40px;
 
-  @media screen and (max-width: 370px) {
-    padding-left: 20px;
+    @media screen and (max-width: 370px) {
+      padding-left: 20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 80px 120px 80px 155px;
+    }
+
+    align-items: center;
+
+    background-color: #0e0c07;
   }
-
-  @media screen and (min-width: 1024px) {
-    padding: 80px 120px 80px 155px;
-  }
-
-  align-items: center;
-
-  background-color: #0e0c07;
 
   &__wrap {
     margin-left: auto;

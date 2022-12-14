@@ -12,21 +12,25 @@
 
 <body>
   <!-- Header -->
-  <section class="header container">
-    <div class="header__wrap">
-      <include src="./partials/layouts/header.html"></include>
-      <div class="header__social">
-        <include src="./partials/layouts/social.html"></include>
+  <section class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <include src="./partials/layouts/header.html"></include>
+        <div class="header__social">
+          <include src="./partials/layouts/social.html"></include>
+        </div>
       </div>
     </div>
   </section>
   <!-- main -->
   <main>
     <!-- Hero -->
-    <section class="hero hero--hotel container">
-      <include src="./partials/pages/hotel/hero.html"></include>
-      <div class="hero__social">
-        <include src="./partials/layouts/social.html"></include>
+    <section class="hero">
+      <div class="container hero__container hero__container--hotel">
+        <include src="./partials/pages/hotel/hero.html"></include>
+        <div class="hero__social">
+          <include src="./partials/layouts/social.html"></include>
+        </div>
       </div>
     </section>
     <!-- 1 room for 2 adult -->

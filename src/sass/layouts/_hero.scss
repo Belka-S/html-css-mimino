@@ -431,6 +431,18 @@
     }
   }
 
+  &__address {
+    @media screen and (max-width: 1023px) {
+      position: absolute;
+      top: 105px;
+      right: 15px;
+    }
+
+    @media screen and (min-width: 351px) {
+      top: 64px;
+    }
+  }
+
   &__button {
     margin: 0 auto 24px;
 

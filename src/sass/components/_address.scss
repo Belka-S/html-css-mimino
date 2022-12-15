@@ -1,13 +1,4 @@
 .address {
-  @media screen and (max-width: 1023px) {
-    position: absolute;
-    top: 105px;
-    right: 15px;
-  }
-
-  @media screen and (min-width: 351px) {
-    top: 64px;
-  }
   display: inline-block;
 
   border: 1px solid rgba(243, 198, 83, 0.7);
@@ -26,24 +17,49 @@
       font-size: 16px;
     }
 
-    color: #e5e5e5;
     transition: color 250ms linear;
 
-    &:hover,
-    &:focus {
-      color: #f3c653;
+    &--white {
+      color: #e5e5e5;
+
+      &:hover,
+      &:focus {
+        color: #f3c653;
+      }
+
+      &:hover > .address__icon,
+      &:focus > .address__icon {
+        fill: #c79002;
+      }
     }
 
-    &:hover > .address__icon,
-    &:focus > .address__icon {
-      fill: #c79002;
+    &--gray {
+      font-size: 16px;
+      color: #828282;
+
+      &:hover,
+      &:focus {
+        color: #f3c653;
+      }
+
+      &:hover > .address__icon,
+      &:focus > .address__icon {
+        fill: #f3c653;
+      }
     }
   }
 
   &__icon {
     margin-right: 8px;
     align-self: center;
-    fill: #f3c653;
     transition: fill 250ms linear;
+
+    &--yellow {
+      fill: #f3c653;
+    }
+
+    &--brown {
+      fill: #c79002;
+    }
   }
 }

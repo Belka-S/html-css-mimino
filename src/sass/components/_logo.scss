@@ -10,6 +10,25 @@
   @media screen and (max-width: 370px) {
     letter-spacing: 0.1em;
   }
+
+  // <span class="logo logo--dark">MIMINO</span>
+  &--dark {
+    font-size: 40px;
+    color: #828282;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }
+
+  &--bright {
+    font-size: 40px;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }
 }
 
 %text-shadow {

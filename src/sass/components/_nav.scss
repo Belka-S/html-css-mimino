@@ -1,0 +1,138 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  &__list {
+    display: inherit;
+
+    @media screen and (max-width: 350px) {
+      margin-left: auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+
+    @media screen and (max-width: 380px) {
+      margin-left: 20px;
+    }
+
+    &:last-of-type {
+      margin-left: 15px;
+      @media screen and (min-width: 1024px) {
+        margin-left: 72px;
+      }
+    }
+  }
+
+  &__link {
+    @media screen and (min-width: 1024px) {
+      margin-right: 32px;
+      padding-top: 6px;
+      padding-bottom: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+
+    &--yellow {
+      color: #f3c653;
+      transition: color 250ms linear;
+
+      &:hover,
+      &:focus {
+        color: #c79002;
+      }
+    }
+
+    &--brown {
+      color: #c79002;
+      transition: color 250ms linear;
+
+      &:hover,
+      &:focus {
+        color: #f3c653;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media screen and (min-width: 1024px) {
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+    }
+  }
+
+  &__tel {
+    padding: 7px;
+    &.mob-hidden {
+      padding-left: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+
+    &--white {
+      color: #ffffff;
+      transition: color 250ms linear;
+
+      &:hover,
+      &:focus {
+        color: #f3c653;
+      }
+
+      &:hover > .nav__icon,
+      &:focus > .nav__icon {
+        fill: #c79002;
+      }
+    }
+
+    &--gray {
+      color: #828282;
+      transition: color 250ms linear;
+
+      &:hover,
+      &:focus {
+        color: #f3c653;
+      }
+
+      &:hover > .nav__icon,
+      &:focus > .nav__icon {
+        fill: #f3c653;
+      }
+    }
+  }
+
+  &__icon {
+    transition: fill 250ms linear;
+
+    &--yellow {
+      fill: #f3c653;
+    }
+
+    &--brown {
+      fill: #c79002;
+    }
+  }
+}

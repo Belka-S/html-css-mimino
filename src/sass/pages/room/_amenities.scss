@@ -1,0 +1,128 @@
+.amenities {
+  background-color: #fffdee;
+
+  &__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+
+  &__titel {
+    margin-bottom: 16px;
+
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.16;
+    color: #000000;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7a7a7a;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+    list-style: none;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__subtitel {
+    margin-bottom: 16px;
+
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: #000000;
+  }
+
+  &__wrap {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__subdescription {
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+    }
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7a7a7a;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+        margin-right: 80px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-right: 160px;
+      }
+    }
+  }
+
+  &__button-room {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__link {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+      margin-top: 32px;
+      justify-content: flex-end;
+    }
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #c79002;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+      color: #f3c653;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  &__icon {
+    margin-left: 12px;
+
+    fill: currentColor;
+  }
+}

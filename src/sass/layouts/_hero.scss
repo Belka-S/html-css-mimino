@@ -1,4 +1,371 @@
 .hero {
+  background-color: #474747;
+  // Background stiles
+  &--main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-main-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-main-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-main-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-main-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--restaurant {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-rest-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-rest-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-rest-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-rest-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--hotel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-hotel-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-hotel-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero-hotel-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--double {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(../images/hero-lux-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 10%,
+          rgba(0, 0, 0, 0) 20%
+        ),
+        url(../images/hero-lux-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--doublelux {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(../images/hero-lux-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 10%,
+          rgba(0, 0, 0, 0) 20%
+        ),
+        url(../images/hero-lux-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-desk-2x.jpg);
+      }
+    }
+  }
+
+  &--triple {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 10%,
+        rgba(0, 0, 0, 0) 20%
+      ),
+      url(../images/hero-lux-mob-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 10%,
+          rgba(0, 0, 0, 0) 20%
+        ),
+        url(../images/hero-lux-mob-2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 7%,
+          rgba(0, 0, 0, 0) 14%
+        ),
+        url(../images/hero-lux-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to bottom,
+            #000000 0%7 rgba(0, 0, 0, 0.55) 7%,
+            rgba(0, 0, 0, 0) 14%
+          ),
+          url(../images/hero-lux-desk-2x.jpg);
+      }
+    }
+  }
+
   &__container {
     position: relative;
 
@@ -27,308 +394,6 @@
       &--doublelux,
       &--triple {
         padding-top: 435px;
-      }
-    }
-    background-color: #474747;
-
-    // Background stiles
-    &--main {
-      background-size: cover;
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero-main-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-main-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-main-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-main-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-main-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-main-desk-2x.jpg);
-        }
-      }
-    }
-
-    &--restaurant {
-      background-size: cover;
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero-rest-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-rest-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-rest-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-rest-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-rest-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-rest-desk-2x.jpg);
-        }
-      }
-    }
-
-    &--hotel {
-      background-size: cover;
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero-hotel-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-hotel-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-hotel-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-hotel-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-          ),
-          url(../images/hero-hotel-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              to right,
-              rgba(0, 0, 0, 0.65),
-              rgba(0, 0, 0, 0.65)
-            ),
-            url(../images/hero-hotel-desk-2x.jpg);
-        }
-      }
-    }
-
-    &--double {
-      background-size: cover;
-      background-image: linear-gradient(
-          to bottom,
-          #000000 0%,
-          rgba(0, 0, 0, 0.55) 10%,
-          rgba(0, 0, 0, 0) 20%
-        ),
-        url(../images/hero-lux-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/hero-lux-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-desk-2x.jpg);
-        }
-      }
-    }
-
-    &--doublelux {
-      background-size: cover;
-      background-image: linear-gradient(
-          to bottom,
-          #000000 0%,
-          rgba(0, 0, 0, 0.55) 10%,
-          rgba(0, 0, 0, 0) 20%
-        ),
-        url(../images/hero-lux-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/hero-lux-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-desk-2x.jpg);
-        }
-      }
-    }
-
-    &--triple {
-      background-size: cover;
-      background-image: linear-gradient(
-          to bottom,
-          #000000 0%,
-          rgba(0, 0, 0, 0.55) 10%,
-          rgba(0, 0, 0, 0) 20%
-        ),
-        url(../images/hero-lux-mob-1x.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/hero-lux-mob-2x.jpg);
-      }
-      @media screen and (min-width: 1024px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-tab-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-tab-2x.jpg);
-        }
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0.55) 7%,
-            rgba(0, 0, 0, 0) 14%
-          ),
-          url(../images/hero-lux-desk-1x.jpg);
-        @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/hero-lux-desk-2x.jpg);
-        }
       }
     }
   }

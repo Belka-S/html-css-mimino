@@ -1,4 +1,6 @@
 .footer {
+  background-color: #0e0c07;
+
   &__container {
     display: flex;
     padding: 40px;
@@ -12,8 +14,6 @@
     }
 
     align-items: center;
-
-    background-color: #0e0c07;
   }
 
   &__wrap {

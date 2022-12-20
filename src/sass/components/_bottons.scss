@@ -1,14 +1,12 @@
-// <!-- <button class="btn room__btn" type="button">Make reservation</button> -->
-// <!-- <button class="btn modal__btn" type="button">Make reservation</button> -->
 .button {
   padding: 0;
   height: 48px;
-  // padding: 14px;
-  min-width: 232px;
+  width: 100%;
+  max-width: 232px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  
+
   text-decoration: none;
   font-weight: 700;
   line-height: 1.25;
@@ -44,8 +42,7 @@
 
 %btn {
   height: 64px;
-  // padding: 20px;
-  min-width: 384px;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -75,25 +72,25 @@
   }
 }
 
-.room__btn {
+.button-room {
   @extend %btn;
 
   border-radius: 25px;
 
   @media screen and (min-width: 1024px) {
     // padding: 18px;
-    min-width: 434px;
+    max-width: 434px;
     font-size: 24px;
   }
 }
 
-.modal__btn {
+.button-modal {
   @extend %btn;
 
   border-radius: 2px;
 
   @media screen and (min-width: 1024px) {
     // padding: 18px;
-    min-width: 592px;
+    max-width: 592px;
   }
 }

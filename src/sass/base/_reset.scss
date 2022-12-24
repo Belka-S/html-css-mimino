@@ -36,3 +36,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button,
+th,
+td {
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}

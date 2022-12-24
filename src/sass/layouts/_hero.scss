@@ -484,15 +484,15 @@
   }
 
   .hero__wrap {
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-      margin-bottom: 25px;
-    }
-
     display: flex;
     align-items: center;
 
     @media screen and (max-width: 1023px) {
       flex-direction: column;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      margin-bottom: 25px;
     }
   }
 
